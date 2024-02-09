@@ -1,42 +1,47 @@
 package eugenie_solutions.week2;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class DivisibleBy3_5_15 {
     public static void main(String[] args) {
 
-        String divisibelBy15 = "";
-        String divisibelBy5 = "";
-        String divisibelBy3 = "";
 
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Please enter number between 1 ~ N");
-        int number = scan.nextInt();
+        List<Integer> By15 = new ArrayList<>();
+        List<Integer> By5 = new ArrayList<>();
+        List<Integer> By3 = new ArrayList<>();
+        Scanner input = new Scanner(System.in);
+        System.out.println("Please enter a positive number");
+        int number = input.nextInt();
         while (number <= 0) {
             System.out.println("Invalid number. Please re-enter");
-            number = scan.nextInt();
+            number = input.nextInt();
         }
 
         for (int i = 1; i <= number; i++) {
-            if (i % 3 == 0 && i % 5 == 0 && i % 15 == 0) {
-                divisibelBy15 += " " + i;
+            if (i % 15 == 0) {
+                By15.add(i);
+            } else if (i % 5 == 0) {
+                By5.add(i);
+            } else if (i % 3 == 0) {
+                By3.add(i);
+            } else {
+                continue;
             }
-            if (i % 3 == 0 && i % 15 != 0) {
-                divisibelBy3 += " " + i;
-            }
-            if (i % 5 == 0 && i % 15 != 0) {
-                divisibelBy5 += " " + i;
-            }
-        }
-        System.out.println("DivisibelBy 15:" + divisibelBy15);
-        System.out.println("DivisibelBy 5:" + divisibelBy5);
-        System.out.println("DivisibelBy 3:" + divisibelBy3);
+            input.close();
 
-        System.out.println("______________________________________");
+        }
+        System.out.println("divisibleBy3 = " + By3);
+        System.out.println("divisibleBy5 = " + By5);
+        System.out.println("divisibleBy15 = " + By15);
+
+        System.out.println("_________________________________");
 
         solution(100);
     }
     public static void solution(int n) {
+
         String divisibleBy15 = "";
         String divisibleBy5 = "";
         String divisibleBy3 = "";
