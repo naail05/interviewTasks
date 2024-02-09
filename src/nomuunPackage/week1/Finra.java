@@ -1,4 +1,4 @@
-package nomuunPackage.week1;
+package src.nomuunPackage.week1;
 
 public class Finra {
     public static void finra(int number){
