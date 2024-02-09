@@ -11,9 +11,9 @@ public class Divisible {
         for (int i = 1; i <= n; i++) {
             if (i % 15 == 0 ){
                 DivisibleBy15 += i + " ";
-            } else if (i % 3 == 0 && i % 15 != 0) {
+            } else if (i % 3 == 0) {
                 DivisibleBy3 += i + " ";
-            } else if (i % 5 == 0 && i % 15 != 0) {
+            } else if (i % 5 == 0) {
                 DivisibleBy5 += i + " ";
             }
         }
