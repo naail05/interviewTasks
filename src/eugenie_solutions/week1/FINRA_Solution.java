@@ -1,6 +1,6 @@
 package eugenie_solutions.week1;
 
-public class FINRA {
+public class FINRA_Solution {
     public static void main(String[] args) {
 
         FINRA1();
