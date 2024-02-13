@@ -1,6 +1,6 @@
 package eugenie_solutions.week1;
 
-public class OddOrEven {
+public class OddOrEven_Solution {
     public static void oddOrEven(int numbers) {
         if (numbers % 2 == 0) {
             System.out.println(numbers + " is even number1");

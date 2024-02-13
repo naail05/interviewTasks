@@ -2,7 +2,7 @@ package eugenie_solutions.week1;
 
 import java.util.Scanner;
 
-public class DivideWithoutOperator {
+public class DivideWithoutOperator_Solution {
     public static void main(String[] args) {
         System.out.println(divide1(10, 5));
         System.out.println(divide1(0, 5));
