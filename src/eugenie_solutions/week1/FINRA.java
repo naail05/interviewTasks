@@ -5,8 +5,10 @@ public class FINRA {
 
         FINRA1();
         System.out.println("__________________________");
+
         printFINRA();
         System.out.println("__________________________");
+
         printFINRA1();
     }
 
@@ -25,7 +27,6 @@ public class FINRA {
         }
         System.out.println(result);
     }
-
     public static void printFINRA() {
         for (int i = 1; i <= 30; i++) {
             if (i % 5 == 0 && i % 3 == 0) {
