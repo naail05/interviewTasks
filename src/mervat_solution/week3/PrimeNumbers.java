@@ -1,4 +1,4 @@
-package week3;
+package mervat_solution.week3;
 
 import java.util.Scanner;
 
