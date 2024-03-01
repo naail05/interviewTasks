@@ -22,7 +22,7 @@ public static String frequencyOfChars(String str) {
         expectedResult += str.charAt(j) + "" + count;//the character at index j and the count to the expectedResult string. The + ""
         // + is used to concatenate the character and the count as strings.
         str = str.replace("" + str.charAt(j), "");
-       // After processing all occurrences of the character at index j,
+        // After processing all occurrences of the character at index j,
         // it removes all occurrences of that character from the input string str.
         // This is done to ensure that each character is processed only once.
     }
